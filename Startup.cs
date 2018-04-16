@@ -39,7 +39,7 @@ namespace dnpsecurity
             throw new NotImplementedException();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        // This method gets called by the runtime. Use this method to configure the GHTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseStaticFiles();
@@ -55,7 +55,7 @@ namespace dnpsecurity
             }
 
             app.UseStaticFiles();
-
+//comment
             app.UseMvc();
         }
     }
